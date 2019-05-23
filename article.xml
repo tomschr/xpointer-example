@@ -53,4 +53,13 @@
     xpointer="xmlns(d=http://docbook.org/ns/docbook)
               xpointer(id('sec.intro')/*[not(self::d:title)])"/>
  </sect1>
+
+ <!-- (8) -->
+ <sect1 xml:id="sec.intro-with-element-scheme">
+   <title>Hello World with element()</title>
+   <!-- Same as sec.intro-with-other-title, but a bit simpler.
+   -->
+   <xi:include href="intro.xml" xpointer="element(sec.intro/2)"/>
+ </sect1>
+
 </article>
