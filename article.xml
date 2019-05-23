@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<article version="5.1" xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Article with XIncludes and XPointer</title>
+ <info>
+  <authorgroup>
+   <xi:include href="author.xml"/>
+   <editor xml:id="editor">
+    <personname>
+     <firstname>Wilber</firstname>
+     <surname>Gimp</surname>
+    </personname>
+   </editor>
+  </authorgroup>
+ </info>
+ <para>
+  (1) Hello, this is the author: <xi:include href="author.xml"
+   xpointer="xpointer(element(/1)/*)"/>
+ </para>
+ <para>
+  (2) This is the author: <xi:include href="author.xml"
+   xpointer="xpointer(id('author')/*)"/>
+ </para>
+ <para>
+  (3) This is the editor: <xi:include xpointer="xpointer(id('editor')/*)"/>
+ </para>
+</article>
