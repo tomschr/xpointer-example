@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<article version="5.1" xmlns="http://docbook.org/ns/docbook">
+ <title>Includes</title>
+ <para>Contains snippets which are included</para>
+
+ <note xml:id="note.sudoers">
+  <title>Ignored Files in <filename>/etc/sudoers.d</filename></title>
+  <para> The <literal>#includedir</literal> command in
+    <filename>/etc/sudoers</filename>, used for
+    <filename>/etc/sudoers.d</filename>, ignores files that end in
+    <literal>~</literal> (tilde) or contain a <literal>.</literal> (dot).
+  </para>
+ </note>
+</article>

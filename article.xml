@@ -29,12 +29,21 @@
  </para>
 
  <!-- (4) -->
+ <note>
+   <xi:include href="includes.xml" xpointer="xpointer(id('note.sudoers')/*)"/>
+ </note>
+
+ <!-- (5) -->
  <sect1 xml:id="sec.intro-with-other-id">
    <xi:include href="intro.xml"
     xpointer="xpointer(id('sec.intro')/*)"/>
+    <!-- (6) reuse the note again, but set your own ID: -->
+    <note xml:id="note.sudoers.again">
+     <xi:include href="includes.xml" xpointer="xpointer(id('note.sudoers')/*)"/>
+    </note>
  </sect1>
 
- <!-- (5) -->
+ <!-- (7) -->
  <sect1 xml:id="sec.intro-with-other-title">
    <title>Hello World</title>
    <!-- For the real XML nerd. It works, but better avoid it.
