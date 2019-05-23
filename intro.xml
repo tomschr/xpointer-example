@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section version="5.1" xml:id="sec.intro"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Introduction</title>
+    <para>The quick brown fox jumps over the lazy dog.</para>
+</section>
+

@@ -27,4 +27,21 @@
  <para>
   (3) This is the editor: <xi:include xpointer="xpointer(id('editor')/*)"/>
  </para>
+
+ <!-- (4) -->
+ <sect1 xml:id="sec.intro-with-other-id">
+   <xi:include href="intro.xml"
+    xpointer="xpointer(id('sec.intro')/*)"/>
+ </sect1>
+
+ <!-- (5) -->
+ <sect1 xml:id="sec.intro-with-other-title">
+   <title>Hello World</title>
+   <!-- For the real XML nerd. It works, but better avoid it.
+       With this notation, you can add a different title.
+   -->
+   <xi:include href="intro.xml"
+    xpointer="xmlns(d=http://docbook.org/ns/docbook)
+              xpointer(id('sec.intro')/*[not(self::d:title)])"/>
+ </sect1>
 </article>
