@@ -29,7 +29,7 @@ The file `article.xml` contains different XIncludes and XPointers:
 
 * `<xi:include href="intro.xml" xpointer="xmlns(d=http://docbook.org/ns/docbook)xpointer(id('sec.intro')/*[not(self::d:title)])"/>`
 
-   Includes the file `intro.xml`, and points to the section with the
+   For the XML nerds. ;-) Includes the file `intro.xml`, and points to the section with the
    `xml:id` "sec.intro". Include all elements except the `title` element.
    Useful if you want to specify another title. Use sparingly!
    (The `xmlns()` expression is needed to define the DocBook 5 namespace
