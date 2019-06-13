@@ -2,7 +2,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <article version="5.1" xmlns="http://docbook.org/ns/docbook">
- <title>Includes</title>
+ <title>Xncludes bla bla</title>
  <para>Contains snippets which are included</para>
 
  <note xml:id="note.sudoers">
@@ -12,5 +12,6 @@
     <filename>/etc/sudoers.d</filename>, ignores files that end in
     <literal>~</literal> (tilde) or contain a <literal>.</literal> (dot).
   </para>
+  <para>...</para>
  </note>
 </article>
